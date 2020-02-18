@@ -106,6 +106,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a><command>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/default">Default</a>
                 </div>
 
                 <div class="alert alert-primary alert-dismissible fade show" role="alert">

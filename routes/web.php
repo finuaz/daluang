@@ -16,3 +16,12 @@ Route::get('/#', function (){
 });
 
 Route::get('/', 'IndexController@index');
+
+
+Route::get('/default', function (){
+    return view('pages.default');
+});
+
+Route::get('/navbar', function(){
+    return view('partials.navbar');
+});
