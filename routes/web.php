@@ -25,3 +25,7 @@ Route::get('/default', function (){
 Route::get('/navbar', function(){
     return view('partials.navbar');
 });
+
+Route::get('/catalogue', 'BookController@index');
+
+Route::get('/about', 'AboutController@index');
