@@ -12,8 +12,8 @@
 
 
 </head>
-<body class='bg-secondary'>
-    <div class="container container-fluid">
+<body style="background-color: chocolate">
+    <div class="w-screen mb-0">
     <div id="app">
         @include('partials.navbar')
         <div class='container bg-light rounded-bottom'>
@@ -25,7 +25,7 @@
     </div>
     </div>
 
-    <div class="container container-fluid">
+    <div class="footer stick-bottom">
         @include('partials.footer')
     </div>
 </body>

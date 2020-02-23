@@ -1,16 +1,9 @@
-{{-- <footer class="footer fixed-bottom">
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary">Tentang</button>
-        <button type="button" class="btn btn-secondary">Redaksi</button>
-        <button type="button" class="btn btn-secondary">Kontak</button>
-      </div>
-</footer> --}}
 
-<footer class="fixed-bottom bg-dark ">
-        <div class="container">
-            <h3 style="color: azure">        Sitemap    </h3>
+<footer class="bg-dark">
+        <div class="w-screen ml-4 pt-2">
+            <h3 style="color: azure">Sitemap    </h3>
         </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="navbar navbar-expand-lg navbar-dark ">
 
 
     <div class="row span12">
@@ -38,7 +31,7 @@
 
 
         </div>
-      </nav>
+    </div>
     </div>
 </div>
 </footer>

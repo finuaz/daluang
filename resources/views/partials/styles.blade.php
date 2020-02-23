@@ -15,10 +15,11 @@
 {{-- customed css --}}
 {{-- <style>
 .body {
-    background-color: #F8C471
+    background-color: #ffffff
+
 }
 
-.footer {
+/* .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -26,6 +27,6 @@
     line-height: 60px; /* Vertically center the text there */
 
     background-color: #38240a;
-  }
+  } */
 
 </style> --}}
