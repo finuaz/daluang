@@ -26,6 +26,10 @@ Route::get('/navbar', function(){
     return view('partials.navbar');
 });
 
-Route::get('/catalogue', 'BookController@index');
 
-Route::get('/about', 'AboutController@index');
+
+// Pages
+
+Route::get('/catalogue', 'BookController@index');
+Route::get('/tentang', 'AboutController@index');
+Route::get('/redaksi', 'RedaksiController@index');

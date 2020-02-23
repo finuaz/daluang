@@ -1,5 +1,9 @@
 # TO DO list
 
-// TODO make about page
-// TODO make about content
-// TODO make book database
+// TODO make post page
+// TODO make landing page
+// TODO make authentication
+// TODO make index layout
+// TODO make navbar
+// TODO make footer & sitemap
+// TODO make katalog

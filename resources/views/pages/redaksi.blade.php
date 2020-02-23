@@ -5,7 +5,7 @@
     {{-- <h5>{{$preambule}}</h5> --}}
 
 
-    <h1>About</h1>
+    <h1>Redaksi</h1>
     <p>mengenai dewan redaksi situs ini</p>
 
 

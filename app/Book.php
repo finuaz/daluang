@@ -12,7 +12,7 @@ class Book extends Model
 
     public $timestamps = true;
 
-    protected $fillable = ['title','author','publisher','genre','description','goodreads'];
+    protected $fillable = ['title','author','publisher','genre','description','goodreads','image'];
 
 
 }

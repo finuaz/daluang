@@ -21,6 +21,7 @@ class CreateBooksTable extends Migration
             $table->varchar('genre',15);
             $table->text('description')->nullable(true);
             $table->varchar('goodread',30)->nullable(true);
+            $table->varchar('image',255)->nullable(true);
             $table->timestamps();
         });
     }
