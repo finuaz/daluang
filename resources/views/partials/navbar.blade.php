@@ -1,13 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange">
-        <a class="navbar-brand" href="/default">
+        <a class="navbar-brand pl-0" href="/default">
             <h1><b>daluang.co</b></h1>
         </a>
 
-        {{-- search button --}}
-        <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary mx-0 my-sm-0" type="submit">Search</button>
-            </form>
+
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,22 +29,17 @@
                 <a class="nav-link" href="/catalogue">Katalog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">Tentang</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/redaksi">Redaksi</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Kontak</a>
+                <a class="nav-link disabled" href="/forum">Forum</a>
             </li>
 
           </ul>
 
 
-          <ul class="nav navbar-nav ml-auto">
-            <li>hello</li>
-          </ul>
-
+        {{-- search button --}}
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-0 rounded-left" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary mx-0 my-sm-0 rounded-right" type="submit">Search</button>
+            </form>
 
         </div>
       </nav>

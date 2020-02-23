@@ -21,7 +21,7 @@
     <div id="app">
         @include('partials.navbar')
         <div class='bg-light rounded-bottom'>
-        <main class="py-4 px-4 wrapper position-relative w-screen flex-fill">
+        <main class="mx-4 py-4 px-4 wrapper position-relative w-screen flex-fill">
             {{-- @include('partials.messages') --}}
             @yield('content')
         </main>

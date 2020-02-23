@@ -33,3 +33,4 @@ Route::get('/navbar', function(){
 Route::get('/catalogue', 'BookController@index');
 Route::get('/tentang', 'AboutController@index');
 Route::get('/redaksi', 'RedaksiController@index');
+Route::get('/forum', 'ForumController@index');
