@@ -4,33 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-
     <title>daluang.co</title>
 
-    <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    {{-- Local boostrap --}}
-
-        <!-- Styles -->
-        <link href="{{ asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="">
-
-        {{-- Javascript bootstrap --}}
-        <script src="{{ asset('/assets/js/jquery.js') }}" defer></script>
-        <script src="{{ asset('/assets/js/bootstrap.min.js') }}" defer></script>
-
-    {{-- CKeditor5 --}}
-        <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
-
-
-
-
-
+    @include('partials.styles')
+    @include('partials.security')
+    @include('partials.tools')
 
 
 </head>
@@ -45,6 +23,10 @@
         </main>
         </div>
     </div>
+    </div>
+
+    <div class="container container-fluid">
+        @include('partials.footer')
     </div>
 </body>
 </html>
