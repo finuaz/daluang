@@ -1,7 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange">
         <a class="navbar-brand" href="/default">
-            <h2><b>daluang.co</b></h2>
+            <h1><b>daluang.co</b></h1>
         </a>
+
+        {{-- search button --}}
+        <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary mx-0 my-sm-0" type="submit">Search</button>
+            </form>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,10 +44,11 @@
 
           </ul>
 
-          {{-- search button --}}
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+
+          <ul class="nav navbar-nav ml-auto">
+            <li>hello</li>
+          </ul>
+
+
         </div>
       </nav>

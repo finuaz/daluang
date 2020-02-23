@@ -9,15 +9,19 @@
     @include('partials.styles')
     @include('partials.security')
     @include('partials.tools')
+    @include('partials.share_buttons_style')
+
+    {{-- styles --}}
+    {{-- {{ URL::asset('css/share_buttons.css') }} --}}
 
 
 </head>
-<body style="background-color: chocolate">
-    <div class="w-screen mb-0">
+<body style="background-color: chocolate" class="d-flex flex-column" style="min-height: 100vh">
+    <div class="w-screen">
     <div id="app">
         @include('partials.navbar')
-        <div class='container bg-light rounded-bottom'>
-        <main class="py-4">
+        <div class='bg-light rounded-bottom'>
+        <main class="py-4 px-4 wrapper position-relative w-screen flex-fill">
             {{-- @include('partials.messages') --}}
             @yield('content')
         </main>
@@ -25,8 +29,11 @@
     </div>
     </div>
 
-    <div class="footer stick-bottom">
+    {{-- sharebuttons --}}
+    @include('partials.share_buttons')
+
+    <footer class="footer">
         @include('partials.footer')
-    </div>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 
-<footer class="bg-dark">
+<div class="bg-dark">
         <div class="w-screen ml-4 pt-2">
             <h3 style="color: azure">Sitemap    </h3>
         </div>
@@ -34,4 +34,4 @@
     </div>
     </div>
 </div>
-</footer>
+</div>
