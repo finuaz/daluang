@@ -56,7 +56,9 @@ class PagesController extends Controller
         return view('pages.contribution');
     }
 
+
+    // dashboard
     public function dashboard(){
-        return view('pages.dashboard');
+        return view('dashboard.dashboard');
     }
 }
