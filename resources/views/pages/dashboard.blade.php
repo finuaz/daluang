@@ -3,8 +3,8 @@
 @section('content')
 
 
-    <h1>Default</h1>
-    <p>this is the default page</p>
+    <h1>Dashboard</h1>
+    <p>tempat untuk menulis post</p>
 
     <button onclick=location.href="/">Index</button>
 @endsection

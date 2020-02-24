@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange">
-        <a class="navbar-brand pl-0" href="/default">
-            <h1><b>daluang.co</b></h1>
+        <a class="navbar-brand pl-0" href="/">
+            <h1><b>daluang.id</b></h1>
         </a>
 
 
@@ -30,6 +30,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="/forum">Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="/akademi">Akademi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="/gerai">Gerai</a>
             </li>
 
           </ul>

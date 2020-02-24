@@ -25,7 +25,13 @@
                     <a class="nav-link" href="/redaksi">Redaksi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Kontak</a>
+                    <a class="nav-link" href="/kontak">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kontribusi">Kontribusi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">dashboard</a>
                 </li>
             </ul>
             </div>
@@ -33,10 +39,10 @@
     </div>
 
     <div class="media justify-content-center mx-0 my-0">
-            <small class="text-white" >©2020 daluang.co - all rights reserved</small>
+            <small class="text-white" >©2020 daluang.id - all rights reserved</small>
         </div>
         <div class="media justify-content-center mx-0 mt-0 pb-4">
-            <small class="text-white" >created and managed by Iman Finuaz</small>
+            <small class="text-white" >created and managed by <a href="https://www.linkedin.com/in/iman-finuaz/">Iman Finuaz</a></small>
         </div>
 
 

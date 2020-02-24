@@ -11,17 +11,7 @@
 |
 */
 
-Route::get('/#', function (){
-    return view('welcome');
-});
-
-Route::get('/', 'IndexController@index');
-
-
-Route::get('/default', function (){
-    return view('pages.default');
-});
-
+// Partials
 Route::get('/navbar', function(){
     return view('partials.navbar');
 });
@@ -30,7 +20,18 @@ Route::get('/navbar', function(){
 
 // Pages
 
-Route::get('/catalogue', 'BookController@index');
-Route::get('/tentang', 'AboutController@index');
-Route::get('/redaksi', 'RedaksiController@index');
-Route::get('/forum', 'ForumController@index');
+Route::get('/catalogue', 'PagesController@catalogue');
+Route::get('/tentang', 'PagesController@about');
+Route::get('/redaksi', 'PagesController@redaksi');
+Route::get('/forum', 'PagesController@forum');
+Route::get('/artikel', 'PagesController@article');
+Route::get('/gerai', 'PagesController@shop');
+Route::get('/kontak', 'PagesController@contact');
+Route::get('/kontribusi', 'PagesController@contribution');
+Route::get('/dashboard', 'PagesController@dashboard');
+
+
+Route::get('/index', 'PagesController@index' );
+Route::get('/welcome', 'PagesController@welcome' );
+
+Route::get('/', 'PagesController@default');

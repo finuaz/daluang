@@ -4,6 +4,6 @@
 // TODO make landing page
 // TODO make authentication
 // TODO make index layout
-// TODO make navbar
-// TODO make footer & sitemap
+// TODO OK make navbar
+// TODO OK make footer & sitemap
 // TODO make katalog
