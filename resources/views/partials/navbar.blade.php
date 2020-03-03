@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange">
         <a class="navbar-brand pl-0" href="/">
-            <h1><b>daluang.id</b></h1>
+            <h1 style="font-family:serif"><b><u>daluang.id</u></b></h1>
         </a>
 
 

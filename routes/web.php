@@ -20,7 +20,6 @@ Route::get('/navbar', function(){
 
 // Pages
 
-Route::get('/catalogue', 'PagesController@catalogue');
 Route::get('/tentang', 'PagesController@about');
 Route::get('/redaksi', 'PagesController@redaksi');
 Route::get('/forum', 'PagesController@forum');
@@ -35,3 +34,8 @@ Route::get('/index', 'PagesController@index' );
 Route::get('/welcome', 'PagesController@welcome' );
 
 Route::get('/', 'PagesController@default');
+
+
+
+// Catalogue
+Route::get('/catalogue', 'CatalogueController@index');
