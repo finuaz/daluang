@@ -13,7 +13,7 @@
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="/artikel" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Artikel
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -22,7 +22,23 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="blusukan">Blusukan</a>
                 </div>
-              </li>
+            </li>
+
+            <li>
+                <div class="btn-group">
+                    <a type="button" class="btn btn-danger" href="/artikel">Artikel</a>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+            </li>
 
 
             <li class="nav-item">
@@ -39,7 +55,6 @@
             </li>
 
           </ul>
-
 
         {{-- search button --}}
         <form class="form-inline my-2 my-lg-0 ml-auto">

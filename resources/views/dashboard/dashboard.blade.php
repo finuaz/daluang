@@ -8,9 +8,8 @@
 
 
     <ul>
-        <li><a href="#">Buku</a></li>
-        <li><a href="#">Artikel</a></li>
-        <li><a href="#">Artikel</a></li>
+        <li><a href="post/book">Buku</a></li>
+        <li><a href="post/article">Artikel</a></li>
     </ul>
 
     <button onclick=location.href="/">Index</button>

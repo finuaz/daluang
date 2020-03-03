@@ -27,7 +27,7 @@ Route::get('/artikel', 'PagesController@article');
 Route::get('/gerai', 'PagesController@shop');
 Route::get('/kontak', 'PagesController@contact');
 Route::get('/kontribusi', 'PagesController@contribution');
-Route::get('/dashboard', 'PagesController@dashboard');
+
 
 
 Route::get('/index', 'PagesController@index' );
@@ -39,3 +39,9 @@ Route::get('/', 'PagesController@default');
 
 // Catalogue
 Route::get('/catalogue', 'CatalogueController@index');
+
+// article
+Route::get('/artikel', 'PostController@index');
+
+// dashboard
+Route::get('/dashboard', 'DashboardController@index');

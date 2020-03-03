@@ -7,3 +7,4 @@
 // TODO OK make navbar
 // TODO OK make footer & sitemap
 // TODO make katalog
+// TODO make dashboard
