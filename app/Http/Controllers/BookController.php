@@ -12,4 +12,12 @@ class BookController extends Controller
         $book = Book::all();
         return view('pages.catalogue', [ 'book' => $book ]);
     }
+
+    public function postbook(){
+        return view('dashboard.postbook');
+    }
+
+    public function store(){
+        return null;
+    }
 }

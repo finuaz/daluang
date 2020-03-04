@@ -45,3 +45,4 @@ Route::get('/artikel', 'PostController@index');
 
 // dashboard
 Route::get('/dashboard', 'DashboardController@index');
+Route::get('/post/book', 'BookController@postbook');
