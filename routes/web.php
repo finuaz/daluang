@@ -45,4 +45,5 @@ Route::get('/artikel', 'PostController@index');
 
 // dashboard
 Route::get('/dashboard', 'DashboardController@index');
+Route::post('dashboard.store', 'BookController@store');
 Route::get('/post/book', 'BookController@postbook');
