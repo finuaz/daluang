@@ -25,6 +25,9 @@
                 {{Form::textarea('body', "",  [ 'class'=>'form-control editor', 'placeholder'=> 'Body text'])}}
                     {{-- ckeditor --}}
 
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" name="title" class="form-control" placeholder="Nama pegawai ..">
 
                 {{-- error notification --}}
                 @if($errors->has('description'))
