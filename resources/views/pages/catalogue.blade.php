@@ -10,6 +10,7 @@
             <div class="row">
                 {{-- <div class="col-4"> --}}
 
+
                     {{-- insert items --}}
                     {{-- displaying book cards --}}
             @foreach ($book as $item)
