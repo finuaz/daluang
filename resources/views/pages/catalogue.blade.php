@@ -44,6 +44,18 @@
                 <div class="card-body">
                 <a href="#" class="card-link">Details</a>
                 <a href="#" class="card-link">Goodreads</a>
+
+                    {{-- rating --}}
+                    @if($item->has('ISBN'))
+                        $rating = 'https://www.goodreads.com/book/isbn/{{$item->ISBN}}?callback=myCallback&format=json&user_id=52432900';
+                            <p>{{$rating}}</p>
+
+                    @elseif($item->has('ISBN_13'))
+                        $rating = 'https://www.goodreads.com/book/isbn/{{$item->ISBN_13}}?callback=myCallback&format=json&user_id=52432900';
+                            <p>{{$rating}}</p>
+                    @else
+                        <p>N/A</p>
+                    @endif
                 </div>
             </div>
         </div>

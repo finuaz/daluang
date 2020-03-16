@@ -4,7 +4,8 @@
 // TODO make landing page
 // TODO make authentication
 // TODO make index layout
-// TODO OK make navbar
-// TODO OK make footer & sitemap
-// TODO make katalog
-// TODO make dashboard
+// TODO -[OK]- make navbar
+// TODO -[OK]- make footer & sitemap
+// TODO -[OK]- make katalog
+// TODO -[OK]- make dashboard book
+// TODO make dashboard post
