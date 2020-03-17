@@ -9,30 +9,52 @@
 
         {{-- retrieving reviews --}}
         @php
-            $review = file_get_contents ('https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=0596009208');
-            // $rev = '{"books":[{"id":231262,"isbn":"0596009208","isbn13":"9780596009205","ratings_count":3036,"reviews_count":6732,"text_reviews_count":188,"work_ratings_count":3528,"work_reviews_count":8002,"work_text_reviews_count":203,"average_rating":"4.22"}]}';
+
+            // Testing
+                    // choosing URL
+                    $urlfirst = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
+
+                    foreach ($book as $buku) {
+
+                        if($buku->ISBN !== null){
+                            $n = $buku->ISBN . ",";
+                        } elseif ($buku->ISBN_13 !== null) {
+                            $n = $buku->ISBN_13 . ",";
+                        }
+                    }
+
+                    // TO DO!
+                    // FOR EACH OF BOOK ISBN MUST BE INSERTED IN URL
+
+
+
+                    $urlfinal = $urlfirst.$n;
+                    var_dump($urlfinal);
+
+            // getting JSON from URL
+            $review = file_get_contents('https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=0596009208,1400096898');
+            // $review = file_get_contents($urlfinal);
+
+
+            // parsing JSON into object
             $s1 = json_decode($review);
 
-            //foreach ($sreview as $key => $value) {
-            //    echo $key->average_rating;
-            //}
-                // $value = $sreview;
+            // accessing rating
             $s2 = $s1->books;
+
+            // accessing book 1
             $s3 = $s2[0];
             $s4 = $s3->average_rating;
-                // $value = $sreview->books[0]->average_rating;
-            // var_dump($s1);
-                // print ($s1);
-            // var_dump($s2);
-            // var_dump($s3);
-            // $ok = var_dump($s4);
 
+            // accessing book 1
+            $s5 = $s2[1];
+            $s6 = $s5->average_rating;
 
-
-            // echo $value;
         @endphp
+
         <br>
             <p>{{$s4}}</p>
+            <p>{{$s6}}</p>
         <div class="container">
             <div class="row">
 

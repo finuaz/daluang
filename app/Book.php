@@ -1,10 +1,11 @@
-< ? php
+<?php
 
 namespace App;
 
-use Illuminate\ Database\ Eloquent\ Model;
+use Illuminate\Database\Eloquent\Model;
 
-class Book extends Model {
+class Book extends Model
+{
     //
     protected $table = "books";
     public $primaryKey = 'id_book';
@@ -22,8 +23,7 @@ class Book extends Model {
         'goodreads',
         'cover_image',
         'ISBN',
-        'ISBN_13'
-    ];
+        'ISBN_13'];
 
 
 }
