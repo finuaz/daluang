@@ -12,24 +12,36 @@
 
             // Testing
                     // choosing URL
-                    $urlfirst = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
+                    // $urlfirst = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
 
-                    foreach ($book as $buku) {
+                    // foreach ($book as $buku) {
 
-                        if($buku->ISBN !== null){
-                            $n = $buku->ISBN . ",";
-                        } elseif ($buku->ISBN_13 !== null) {
-                            $n = $buku->ISBN_13 . ",";
-                        }
-                    }
+                    //     if($buku->ISBN !== null){
+                    //         $n = $buku->ISBN . ",";
+                    //     } elseif ($buku->ISBN_13 !== null) {
+                    //         $n = $buku->ISBN_13 . ",";
+                    //     }
+                    // }
 
                     // TO DO!
                     // FOR EACH OF BOOK ISBN MUST BE INSERTED IN URL
+                    $repo = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
+                    foreach ($book as $buku) {
+                        if (isset($buku->ISBN)) {
+                            # code...
+                            $ISBN = $buku->ISBN;
+                            $repo .= $ISBN . "," ;
+                        } elseif (isset($buku->ISBN_13)) {
+                            # code...
+                            $ISBN = $buku->ISBN_13;
+                            $repo .= $ISBN . "," ;
+                        }
+                        # code...
+                    }
+                    // echo $repo;
 
-
-
-                    $urlfinal = $urlfirst.$n;
-                    var_dump($urlfinal);
+                    // $urlfinal = $urlfirst.$n;
+                    // var_dump($urlfinal);
 
             // getting JSON from URL
             $review = file_get_contents('https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=0596009208,1400096898');
@@ -54,6 +66,7 @@
 
         <br>
             <p>{{$s4}}</p>
+            <p>{{$repo}}</p>
             <p>{{$s6}}</p>
         <div class="container">
             <div class="row">
@@ -61,7 +74,7 @@
                 {{-- insert items --}}
                 {{-- displaying book cards --}}
                 @foreach ($book as $item)
-                <div class="col-4 mx-.3">
+                <div class="col-4 my-2">
 
                     <div class="card" style="width: 18rem">
                         {{-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
@@ -94,21 +107,6 @@
                             <a href="#" class="card-link">Goodreads</a>
 
                             {{-- rating --}}
-
-{{--
-                            @if($item->has('ISBN'))
-                            $rating =
-                            'https://www.goodreads.com/book/isbn/{{$item->ISBN}}?callback=myCallback&format=json&user_id=52432900';
-                            <p>{{$rating}}</p>
-
-                            @elseif($item->has('ISBN_13'))
-                            $rating =
-                            'https://www.goodreads.com/book/isbn/{{$item->ISBN_13}}?callback=myCallback&format=json&user_id=52432900';
-                            <p>{{$rating}}</p>
-
-                            @else
-                            <p>N/A</p>
-                            @endif --}}
 
                         </div>
                     </div>
