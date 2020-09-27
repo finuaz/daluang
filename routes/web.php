@@ -36,7 +36,6 @@ Route::get('/welcome', 'PagesController@welcome' );
 Route::get('/', 'PagesController@default');
 
 
-
 // Catalogue
 Route::get('/catalogue', 'CatalogueController@index');
 

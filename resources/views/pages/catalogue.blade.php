@@ -8,7 +8,7 @@
 
 
         {{-- retrieving reviews --}}
-        @php
+        {{-- @php
 
             // Testing
                     // choosing URL
@@ -22,52 +22,52 @@
                     //         $n = $buku->ISBN_13 . ",";
                     //     }
                     // }
-
-                    // TO DO!
-                    // FOR EACH OF BOOK ISBN MUST BE INSERTED IN URL
-                    $repo = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
-                    foreach ($book as $buku) {
-                        if (isset($buku->ISBN)) {
-                            # code...
-                            $ISBN = $buku->ISBN;
-                            $repo .= $ISBN . "," ;
-                        } elseif (isset($buku->ISBN_13)) {
-                            # code...
-                            $ISBN = $buku->ISBN_13;
-                            $repo .= $ISBN . "," ;
-                        }
-                        # code...
-                    }
-                    // echo $repo;
+// //
+//                     // TO DO!
+//                     // FOR EACH OF BOOK ISBN MUST BE INSERTED IN URL
+//                     $repo = "https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=";
+//                     foreach ($book as $buku) {
+//                         if (isset($buku->ISBN)) {
+//                             # code...
+//                             $ISBN = $buku->ISBN;
+//                             $repo .= $ISBN . "," ;
+//                         } elseif (isset($buku->ISBN_13)) {
+//                             # code...
+//                             $ISBN = $buku->ISBN_13;
+//                             $repo .= $ISBN . "," ;
+//                         }
+//                         # code...
+//                     }
+//                     // echo $repo;
 
                     // $urlfinal = $urlfirst.$n;
                     // var_dump($urlfinal);
 
-            // getting JSON from URL
-            $review = file_get_contents('https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=0596009208,1400096898');
-            // $review = file_get_contents($urlfinal);
+            // // getting JSON from URL
+            // $review = file_get_contents('https://www.goodreads.com/book/review_counts.json?key={6bbNCRQ2ezDyqAWPFXDYzw}&isbns=0596009208,1400096898');
+            // // $review = file_get_contents($urlfinal);
 
 
-            // parsing JSON into object
-            $s1 = json_decode($review);
+            // // parsing JSON into object
+            // $s1 = json_decode($review);
 
-            // accessing rating
-            $s2 = $s1->books;
+            // // accessing rating
+            // $s2 = $s1->books;
 
-            // accessing book 1
-            $s3 = $s2[0];
-            $s4 = $s3->average_rating;
+            // // accessing book 1
+            // $s3 = $s2[0];
+            // $s4 = $s3->average_rating;
 
-            // accessing book 1
-            $s5 = $s2[1];
-            $s6 = $s5->average_rating;
+            // // accessing book 1
+            // $s5 = $s2[1];
+            // $s6 = $s5->average_rating;
 
-        @endphp
-
+        @endphp --}}
+{{--
         <br>
             <p>{{$s4}}</p>
             <p>{{$repo}}</p>
-            <p>{{$s6}}</p>
+            <p>{{$s6}}</p> --}}
         <div class="container">
             <div class="row">
 
@@ -86,19 +86,21 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <hr>
-                            <li class="list-group-item">{{ $item->author }}</li>
+                            <li class="list-group-item">Author : {{ $item->author }}</li>
 
                             @if($item->publisher != null)
-                            <li class="list-group-item">{{$item->publisher}}</li>
+                            <li class="list-group-item">Publisher : {{$item->publisher}}</li>
                             @endif
 
-                            <li class="list-group-item">{{$item->genre}}</li>
+                            <li class="list-group-item">Genre : {{$item->genre}}</li>
 
                             @if($item->ISBN != null)
-                            <li class="list-group-item">{{$item->ISBN}}</li>
+                            <li class="list-group-item">ISBN : {{$item->ISBN}}</li>
                             @elseif($item->ISBN_13 != null)
-                            <li class="list-group-item">{{$item->ISBN_13}}</li>
+                            <li class="list-group-item">ISBN : {{$item->ISBN_13}}</li>
                             @endif
+
+                            <li class="list-group-item">Rating : {{ $item->average_rating }}</li>
                         </ul>
 
 
@@ -154,6 +156,12 @@
                     </td></tr>
                 @endforeach --}}
 
+
+        <div class="row">
+            <div class="col-sm-6 col sm-offset-5">
+                {{ $book->render() }}
+            </div>
+        </div>
 
     <button onclick=location.href="/">Index</button>
 @endsection

@@ -1,4 +1,20 @@
 <<<<<<< HEAD
+
+---- About Daluang
+
+Daluang adalah projek pribadi Iman FiNuAz untuk membuat perpustakaan online miliknya. Diawali dengan pembuatan katalog, kemudian akan dilanjutkan dengan pengaplikasian artikel. Adapun fitur yang lain yang mungkin akan dikembangkan meliputi galeri/kegiatan, forum, juga e-learning dalam rubrik akademi.
+
+Pengembangan juga diharapkan melalui pengembangan jaringan kepustakaan yang akan memperbanyak konten
+
+Beberapa persoalan :
+- Akses kepada buku
+- Pemberian akses buku secara daring, hal ini menyebabkan persoalan mengenai hak cipta
+
+
+
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

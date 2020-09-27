@@ -9,3 +9,29 @@
 // TODO -[OK]- make katalog
 // TODO -[OK]- make dashboard book
 // TODO make dashboard post
+
+
+Katalog
+TODO Katalog - Search Bar
+TODO Katalog - callback from API
+TODO Katalog - API for rating
+TODO Katalog - stars for rating
+TODO Katalog - Redirection to Details
+TODO Katalog - Pagination
+TODO Katalog - Browse by Category
+TODO Katalog - Browse by Tags
+TODO Katalog - Make tags & category
+
+Search Result
+
+
+Details
+TODO Details - Book Identity
+TODO Details - Book rating (from many perspectives)
+
+
+Landing page
+TODO Home - Carousel
+TODO Home - Highlight Article
+TODO Home - Highlight Book
+TODO Home - Search bar
