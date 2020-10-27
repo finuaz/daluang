@@ -35,3 +35,6 @@ TODO Home - Carousel
 TODO Home - Highlight Article
 TODO Home - Highlight Book
 TODO Home - Search bar
+
+
+Here's my final statement. This project is ready to be converted into Windows
